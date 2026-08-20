@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    /* position:fixed;
+    width: 100%;
+    z-index: 1000; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+/* .amo{
+   padding-top: 28% ;
+   background-color: #011a51; 
+} */
+.head{
+    background-color: darkblue;
+}
+/* #date{
+    display: flex;
+    justify-content: flex-end;
+    color: tomato;
+} */
+#demo{
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(255, 0, 0, 0.498);
+    padding-right: 15px;
+    
+}
+.link1{
+    background-color: #011a51;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: auto;
+    padding: 5px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(255, 99, 71, 0.699);
+    border-radius:5px;
+    background-color: rgba(251, 44, 8, 0.841);
+}
+main{
+    background-image: url(dataset-card.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+}
+.box2{
+    display:flex;
+    justify-content: space-around;
+    background-image: url(efootball_bg_cl2.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+}
+.link:active{
+    color: black;
+    background-color: tomato;
+    border: none;
+}
+.link:hover{
+    color: black;
+    background-color: tomato;
+    border: none;
+}
+/* .caption{
+    border: solid 1px none;
+    background-color: tomato;
+    transition: 4px;
+    position: relative;
+    opacity: 0;
+    
+} */
+#text{
+    /* position: absolute; */
+    opacity: 0;
+    transform: translateY(100px);
+    animation: appear 3s ease-out forwards;
+
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.kadogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    background: linear-gradient(to right, #03fb5e, #14e560, white);
+    /* transform: translate(50px); */
+    opacity: 1;
+    animation: display 5s ease;
+}
+@keyframes display{
+    from{
+        opacity: 0;
+        transform: translateY(1px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#whatsappgroup{
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+#whatsappgroup:hover{
+    background-color: #25D366;
+    color: white;
+}    
+#whatsappgroup:active{
+    background-color: #25D366;
+    color: white;
+}
+footer{
+    background-color: darkblue;
+    
+}
+#last{
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+}
+.linkmuhimu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.muhimu{
+    color: rgb(210, 197, 197);
+}
+.muhimu:hover{
+    color: gold;
+}
+
+.muhimu:active{
+    color: gold;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+#whatsapp{
+    border-radius: 30%;
+}
+#whatsapp:hover{
+    background-color: #25D366;
+}
+#whatsapp:active{
+    background-color: #25D366;
+}
+#face{
+    border-radius: 10px;
+}
+#face:hover{
+    background-color: rgba(12, 12, 207, 0.686);
+}
+#face:active{
+    background-color: rgba(12, 12, 207, 0.686);
+}
+#insta{
+    border-radius: 20%;
+}
+#insta:hover{
+    background-color:  #d32562;
+}
+#insta:active{
+    background-color: #d32562;
+}
+#you{
+    border-radius: 30%;
+}
+#you:hover{
+    background-color:  red;
+}
+#you:active{
+    background-color: red;
+}
+.case{
+    background-image: url(efootball_bg_cl2.jpg);
+    background-attachment: fixed;
+    background-size:cover;  
+}
+.case1{
+     /* background-image: url(efootball_bg_cl2.jpg);
+    background-attachment: fixed;
+    background-size:cover;  */
+    background-color: #000197;
+}
