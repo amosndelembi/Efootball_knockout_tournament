@@ -37,6 +37,30 @@
       <!-- maelzooooo -->
     <main>
         <img src="main_page_1.png" alt="page" height="auto" width="100%">
+        <div id="morning">
+            <p id="good" style="font-family: Arial; text-align: end; color: tomato; padding-right:30px ;"></p>
+            <script>
+                let hour = new Date().getHours();
+                let text;
+        
+                if(hour<=6){
+                    text = "Good day!👋"
+                }
+                else if(hour<=12){
+                    text = "Good morning!👋"
+                }
+                else if(hour<=17){
+                    text = "Good afternoon!👋"
+                }
+                else if(hour<=19){
+                    text = "Good evening!👋"
+                }
+                else{
+                    text = "Good night!👋"
+                }
+                document.getElementById('good').innerHTML = text;
+            </script>
+        <div/>
        <h3 style="text-align:center; padding:10px; color: whitesmoke">Round of 16</h3> 
        <div class="case" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
 
