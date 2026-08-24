@@ -36,7 +36,32 @@
    <main >
         
        <img src="efootball_v550_keyvisual_4k-1024x576.png" alt="photo" height="auto" width="100%">
-       <br> <br> <br>
+       <br>
+        <br><br>
+        <div id="morning">
+            <p id="good" style="font-family: Arial; text-align: end; color: tomato; padding-right:30px ;"></p>
+            <script>
+                let hour = new Date().getHours();
+                let text;
+        
+                if(hour<=6){
+                    text = "Good day!👋"
+                }
+                else if(hour<=12){
+                    text = "Good morning!👋"
+                }
+                else if(hour<=17){
+                    text = "Good afternoon!👋"
+                }
+                else if(hour<=19){
+                    text = "Good evening!👋"
+                }
+                else{
+                    text = "Good night!👋"
+                }
+                document.getElementById('good').innerHTML = text;
+            </script>
+        <div/><br><br>
 
      
       <!-- whatsapp group -->
